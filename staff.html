@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Педагогический и вожатский состав - МБУ ЗСЛОО "Золотой колос"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <style>
+        .shift-section {
+            margin-bottom: 50px;
+        }
+        .shift-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .staff-list {
+            display: grid;
+            gap: 15px;
+        }
+        .staff-item {
+            background: var(--sidebar-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s;
+        }
+        .staff-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .staff-item strong {
+            color: var(--text-color);
+            font-size: 16px;
+        }
+        .staff-item .squad {
+            color: var(--primary-color);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="accessibility-panel" class="accessibility-panel">
+        <div class="accessibility-controls">
+            <span>Размер шрифта:</span>
+            <button onclick="changeFontSize('decrease')">A-</button>
+            <button onclick="changeFontSize('increase')">A+</button>
+            <span>Цвета сайта:</span>
+            <button onclick="changeTheme('white')" class="theme-btn white">Ц</button>
+            <button onclick="changeTheme('black')" class="theme-btn black">Ц</button>
+            <button onclick="changeTheme('blue')" class="theme-btn blue">Ц</button>
+            <button onclick="changeTheme('beige')" class="theme-btn beige">Ц</button>
+            <button onclick="changeTheme('green')" class="theme-btn green">Ц</button>
+            <span>Изображения:</span>
+            <button onclick="toggleImages('show')">🖼️</button>
+            <button onclick="toggleImages('hide')">⊘</button>
+            <button onclick="toggleImages('bw')">◐</button>
+            <span>Синтез речи:</span>
+            <button onclick="toggleSpeech('on')">🔊</button>
+            <button onclick="toggleSpeech('off')">🔇</button>
+            <button onclick="toggleAccessibility()">⚙️</button>
+            <button onclick="resetSettings()">Обычная версия сайта</button>
+            <button onclick="toggleAccessibilityPanel()">−</button>
+        </div>
+    </div>
+
+    <div class="organization-title">
+        МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗАГОРОДНЫЙ СТАЦИОНАРНЫЙ ЛАГЕРЬ ОТДЫХА И ОЗДОРОВЛЕНИЯ "ЗОЛОТОЙ КОЛОС" МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ТИМАШЕВСКИЙ РАЙОН
+    </div>
+
+    <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="parents.html">Родителям</a>
+        <a href="children.html">Детям</a>
+        <a href="photos.html">Фотографии</a>
+        <a href="schedule.html">Распорядок дня</a>
+        <a href="shifts.html">Расписание смен</a>
+        <a href="location.html">Как доехать</a>
+        <a href="feedback.html">Обратная связь</a>
+        <a href="reviews.html">Отзывы</a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Сведения об организации</h3>
+            <ul>
+                <li><a href="about.html">Об организации отдыха детей и их оздоровления</a></li>
+                <li><a href="about.html#osnovnye">Основные сведения</a></li>
+                <li><a href="about.html#dokumenty">Документы</a></li>
+                <li><a href="about.html#rukovodstvo">Руководство</a></li>
+                <li><a href="staff.html">Педагогический и вожатский состав</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="#" onclick="toggleAccessibilityPanel(); return false;">Версия сайта для слабовидящих</a></li>
+            </ul>
+            <h3>Деятельность</h3>
+            <ul>
+                <li><a href="about.html#materialno">Материально-техническое обеспечение и оснащенность организации отдыха детей и их оздоровления</a></li>
+                <li><a href="about.html#uslugi">Услуги, в том числе платные, предоставляемые организации отдыха детей и их оздоровления</a></li>
+                <li><a href="about.html#dostupnaya">Доступная среда</a></li>
+                <li><a href="about.html#inaya">Иная информация</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Педагогический и вожатский состав</h1>
+            
+            <div class="shift-section">
+                <h2>1 смена (Воспитатели)</h2>
+                <div class="staff-list">
+                    <div class="staff-item">
+                        <strong>Кузнецов Артём Сергеевич</strong>
+                        <div class="squad">1 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Елизарьева Диана Николаевна</strong>
+                        <div class="squad">2 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Попов Егор Евгеньевич</strong>
+                        <div class="squad">3 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Набокова Анна Сергеевна</strong>
+                        <div class="squad">4 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Шпарага Арина Александровна</strong>
+                        <div class="squad">5 отряд</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shift-section">
+                <h2>2 смена (Воспитатели)</h2>
+                <div class="staff-list">
+                    <div class="staff-item">
+                        <strong>Елизарьева Диана Николаевна</strong>
+                        <div class="squad">1 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Попов Егор Евгеньевич</strong>
+                        <div class="squad">2 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Набокова Анна Сергеевна</strong>
+                        <div class="squad">3 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Иванская Виктория Сергеевна</strong>
+                        <div class="squad">4 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Тагинцева Дарья Леонидовна</strong>
+                        <div class="squad">5 отряд</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shift-section">
+                <h2>3 смена (Воспитатели)</h2>
+                <div class="staff-list">
+                    <div class="staff-item">
+                        <strong>Богма Артём Александрович</strong>
+                        <div class="squad">1 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Тагинцева Дарья Леонидовна</strong>
+                        <div class="squad">2 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Субачев Руслан Валерьевич</strong>
+                        <div class="squad">3 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Левченко Николай Юрьевич</strong>
+                        <div class="squad">4 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Абрамов Павел Михайлович</strong>
+                        <div class="squad">5 отряд</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shift-section">
+                <h2>4 смена (Воспитатели)</h2>
+                <div class="staff-list">
+                    <div class="staff-item">
+                        <strong>Богма Артём Александрович</strong>
+                        <div class="squad">1 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Субачев Руслан Валерьевич</strong>
+                        <div class="squad">2 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Мамулян Лаура Левановна</strong>
+                        <div class="squad">3 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Чернов Василий Иванович</strong>
+                        <div class="squad">4 отряд</div>
+                    </div>
+                    <div class="staff-item">
+                        <strong>Абрамов Павел Михайлович</strong>
+                        <div class="squad">5 отряд</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <button class="chat-button" onclick="openChat()">Напишите нам</button>
+
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'zolotoj-kolos.ru';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
